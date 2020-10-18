@@ -13,6 +13,12 @@ public class MainExtended {
         System.out.println("Age: " + myAge);
         System.out.println("First Letter: " + firstLetter);
         System.out.println("My Height: " + myHeight);
+        System.out.println(myName1());
+
+    }
+
+    private static String myName1() {
+        return "Paweł";
 
     }
 }
