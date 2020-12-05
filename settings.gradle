@@ -1,4 +1,8 @@
 include 'kodilla-intro'
 include 'HelloWorld'
 include 'kodilla-basic-tests'
+include 'kodilla-basic-tests'
+include 'kodilla-basic-tests'
+include 'kodilla-basic-tests'
+include 'kodilla-basic-tests'
 
