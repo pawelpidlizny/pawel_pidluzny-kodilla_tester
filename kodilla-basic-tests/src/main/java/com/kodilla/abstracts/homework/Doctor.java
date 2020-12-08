@@ -12,9 +12,10 @@ public class Doctor extends Job {
     }
 
     @Override
-    public void process (){
+    public void process() {
         System.out.println("The obligation to treat people ");
     }
+
     @Override
     public void responsibilities() {
         System.out.println("Heals neoplastic diseases");

@@ -10,23 +10,23 @@ public class Application {
         boolean correctSum = ResultChecker.assertEquals(13, sumResult);
 
         if (correctSum) {
-            System.out.println("Metoda sum działa poprawnie dla liczb " + a +  " i " + b);
+            System.out.println("Metoda sum działa poprawnie dla liczb " + a + " i " + b);
         } else {
             System.out.println("Metoda sum nie działa poprawnie dla liczb " + a + " i " + b);
         }
         int x = 5;
         int y = 8;
-        int subResult = calculator.subtract(x,y);
-        boolean correctSub = ResultChecker.assertEquals(-3,subResult);
+        int subResult = calculator.subtract(x, y);
+        boolean correctSub = ResultChecker.assertEquals(-3, subResult);
 
         if (correctSub) {
-            System.out.println("Metoda subtract działa poprawnie dla liczb " + x +  " i " + y);
+            System.out.println("Metoda subtract działa poprawnie dla liczb " + x + " i " + y);
         } else {
             System.out.println("Metoda subtract nie działa poprawnie dla liczb " + x + " i " + y);
         }
         int z = 8;
         int powerResult = calculator.power(z);
-        boolean correctPower = ResultChecker.assertEquals(64,powerResult);
+        boolean correctPower = ResultChecker.assertEquals(64, powerResult);
 
         if (correctPower) {
             System.out.println("Metoda subtract działa poprawnie dla liczb " + z);

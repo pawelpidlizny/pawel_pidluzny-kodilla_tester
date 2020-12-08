@@ -10,10 +10,12 @@ public class Nurse extends Job {
     public String toString() {
         return "Name: " + firstName + "\n" + "Salary: " + salary + "\n" + "Age: " + age + " \n" + "Job: " + job;
     }
+
     @Override
-    public void process(){
+    public void process() {
         System.out.println("The nurse should give the patient an injection");
     }
+
     @Override
     public void responsibilities() {
         System.out.println("He helps the sick ");

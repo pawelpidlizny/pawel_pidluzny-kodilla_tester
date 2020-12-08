@@ -5,18 +5,21 @@ public class Convertible extends Car {
 
     }
 
-    public void openRoof(){
+    public void openRoof() {
         System.out.println("Opening roof...");
     }
-    public void closeRoof(){
+
+    public void closeRoof() {
         System.out.println("Closing roof");
     }
+
     @Override
-    public void openDoors(){
+    public void openDoors() {
         System.out.println("Opening 2 doors");
     }
-    public Convertible(int wheels,int seats){
-        super(wheels,seats);
+
+    public Convertible(int wheels, int seats) {
+        super(wheels, seats);
         System.out.println("Convertible constructor");
     }
 }

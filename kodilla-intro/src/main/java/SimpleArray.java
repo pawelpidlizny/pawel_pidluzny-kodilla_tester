@@ -17,7 +17,7 @@ public class SimpleArray {
 
         int number0fElements = movies.length;
 
-        System.out.println("Movies length: " +  movies.length);
+        System.out.println("Movies length: " + movies.length);
         System.out.println(movies[0]);
         System.out.println(movies[1]);
         System.out.println(movies[2]);

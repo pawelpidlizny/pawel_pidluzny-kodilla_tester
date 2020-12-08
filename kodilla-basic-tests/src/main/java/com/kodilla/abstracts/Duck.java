@@ -1,11 +1,12 @@
 package com.kodilla.abstracts;
 
 public class Duck extends Animal {
-    public Duck(){
+    public Duck() {
         super(2);
     }
+
     @Override
-    public void giveVoice(){
+    public void giveVoice() {
         System.out.println("Quack");
     }
 }

@@ -12,8 +12,5 @@ public class OperatingSystemRunner {
         windows.turnOf();
 
 
-
-
-
     }
 }

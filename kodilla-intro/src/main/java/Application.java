@@ -8,8 +8,9 @@ public class Application {
         this.age = age;
         this.height = height;
     }
+
     public void checkUser() {
-        if (name!= null){
+        if (name != null) {
             if (age > 30 && height > 160) {
                 System.out.println("User is older than 30 and higher than 160cm");
             } else {
@@ -17,8 +18,9 @@ public class Application {
             }
         }
     }
+
     public static void main(String[] args) {
-        Application a = new Application("Adam",23,176 );
+        Application a = new Application("Adam", 23, 176);
         a.checkUser();
     }
 }

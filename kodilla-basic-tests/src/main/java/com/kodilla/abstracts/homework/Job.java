@@ -15,6 +15,7 @@ public abstract class Job {
     }
 
     public abstract void responsibilities();
+
     public abstract void process();
 
 }

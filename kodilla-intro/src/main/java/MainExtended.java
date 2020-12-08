@@ -8,7 +8,7 @@ public class MainExtended {
         boolean isFather = true;
 
         System.out.println(example);
-        System.out.println("Is Father: " + isFather );
+        System.out.println("Is Father: " + isFather);
         System.out.println("Name: " + myName);
         System.out.println("Age: " + myAge);
         System.out.println("First Letter: " + firstLetter);
