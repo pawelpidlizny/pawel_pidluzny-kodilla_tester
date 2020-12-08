@@ -2,10 +2,18 @@ package com.kodilla.inheritance.homework;
 
 public class OperatingSystemRunner {
     public static void main(String[] args) {
-        OperatingSystem operatingSystem = new OperatingSystem();
-        operatingSystem.setWindows();
-        operatingSystem.setMacos();
+        OperatingSystem operatingSystem = new OperatingSystem(1990);
+        operatingSystem.turnOn();
+        operatingSystem.turnOf();
 
-        OperatingSystem macos,windows= new OperatingSystem(2,3);
+        MacOS macOS = new MacOS(1991);
+        Windows windows = new Windows(2000);
+        macOS.turnOn();
+        windows.turnOf();
+
+
+
+
+
     }
 }
