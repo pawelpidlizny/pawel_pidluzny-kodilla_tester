@@ -32,28 +32,29 @@ public class CalculatorTestSuite {
         Calculator calculator = new Calculator();
         int x = 5;
         int y = 8;
-        int subtractResult = calculator.subtract(x,y);
+        int subtractResult = calculator.subtract(x, y);
         Assertions.assertEquals(-3, subtractResult);
 
-        boolean subtract =ResultChecker.assertEquals(13, subtractResult );
+        boolean subtract = ResultChecker.assertEquals(13, subtractResult);
         if (subtract) {
             System.out.println("Metoda subtract działa poprawnie dla liczb " + x + " i " + y);
 
         } else {
             System.out.println("Metoda subtract nie działa poprawnie dla liczb " + x + " i " + y);
         }
+    }
+    @Test
+    public void testPower() {
+        Calculator calculator = new Calculator();
         int z = 8;
         int powerResult = calculator.power(z);
         Assertions.assertEquals(64,powerResult);
         boolean correctPower = ResultChecker.assertEquals(64,powerResult);
 
         if (correctPower){
-            System.out.println("Metoda subtract działa poprawnia dlia liczb " + z );
+            System.out.println("Metoda power działa poprawnia dlia liczb " + z );
         } else {
-            System.out.println("Metoda subtract nie działa poprawnie dla liczb " + z);
+            System.out.println("Metoda power nie działa poprawnie dla liczb " + z);
         }
-
     }
-
-
 }
