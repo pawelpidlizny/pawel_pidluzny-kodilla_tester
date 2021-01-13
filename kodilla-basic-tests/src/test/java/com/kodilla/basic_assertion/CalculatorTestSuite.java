@@ -1,12 +1,8 @@
 package com.kodilla.basic_assertion;
 
 
-import com.kodilla.abstracts.basic_assertion.Calculator;
-import com.kodilla.abstracts.basic_assertion.ResultChecker;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import java.awt.geom.Area;
 
 
 public class CalculatorTestSuite {

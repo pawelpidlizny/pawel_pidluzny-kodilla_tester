@@ -1,7 +1,7 @@
 package com.kodilla.inheritance.homework;
 
 public class OperatingSystem {
-    private int publicationYear;
+    private final int publicationYear;
 
     public OperatingSystem(int publicationYear) {
         this.publicationYear = publicationYear;
