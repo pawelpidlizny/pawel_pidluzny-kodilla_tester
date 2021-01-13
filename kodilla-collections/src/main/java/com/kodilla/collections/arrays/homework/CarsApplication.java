@@ -4,11 +4,12 @@ package com.kodilla.collections.arrays.homework;
 import com.kodilla.collections.interfaces.homework.Car;
 import com.kodilla.collections.interfaces.homework.Ford;
 import com.kodilla.collections.interfaces.homework.Opel;
-import com.kodilla.collections.interfaces.homework.doRace;
+
 
 import java.util.Random;
 
 public class CarsApplication {
+
 
     public static void main(String[] args) {
 
@@ -25,13 +26,13 @@ public class CarsApplication {
         Random random = new Random();
         int drawModelCar =  random.nextInt(2);
 
-        if (drawModelCar == 0 ) {
-            Random random1 = new Random();
 
+        if (drawModelCar == 0 ) {
             return new Ford(random.nextInt(15));
+
         }else{
-            Random random2 = new Random();
-             return new Opel(random.nextInt(15));
+            return new Opel(random.nextInt(15));
+
         }
     }
 }
