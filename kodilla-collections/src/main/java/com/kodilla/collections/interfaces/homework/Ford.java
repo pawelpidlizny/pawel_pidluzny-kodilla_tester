@@ -1,24 +1,38 @@
 package com.kodilla.collections.interfaces.homework;
 
+import java.util.Objects;
+
 public class Ford implements Car {
-    private final double Ford;
+    private int speed;
 
-    public Ford(double ford) {
-        Ford = ford;
+    public Ford(int ford) {
+        this.speed = ford;
     }
-
     public int getSpeed(){
-        return 100;
+        return speed;
     }
-
     public double increaseSpeed(){
-        return  50 * 100;
+        return  speed * 3;
     }
     public double decreaseSpeed(){
-        return 2* 40* 50;
+        return speed / 3;
     }
 
-    public double getFord() {
-        return Ford;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Ford ford = (Ford) o;
+        return speed == ford.speed;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(speed);
+    }
+
+    @Override
+    public String toString() {
+        return "Ford{" + "speed=" + speed + '}';
     }
 }
