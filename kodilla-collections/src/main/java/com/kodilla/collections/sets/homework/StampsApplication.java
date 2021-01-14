@@ -9,6 +9,10 @@ public class StampsApplication {
 
         stamps.add(new Stamp("Bugatti","2",1923,true));
         stamps.add(new Stamp("Eagle","4",1924,false));
+        stamps.add(new Stamp("Bugatti","2",1923,true));
+        stamps.add(new Stamp("Bugatti","2",1923,true));
+        stamps.add(new Stamp("Bugatti","2",1923,true));
+        stamps.add(new Stamp("Eagle","4",1924,false));
 
         System.out.println(stamps.size());
         for (Stamp stamp : stamps){

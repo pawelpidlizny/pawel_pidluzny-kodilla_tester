@@ -32,7 +32,7 @@ public class Stamp {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof Stamp)) return false;
         Stamp stamp = (Stamp) o;
         return Double.compare(stamp.getStampBadge(), getStampBadge()) == 0 && isMarked() == stamp.isMarked() && Objects.equals(getStampName(), stamp.getStampName()) && Objects.equals(getStampNumber(), stamp.getStampNumber());
     }
