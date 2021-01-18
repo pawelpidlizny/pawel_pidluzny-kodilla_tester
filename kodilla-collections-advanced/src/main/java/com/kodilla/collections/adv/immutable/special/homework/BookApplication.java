@@ -13,7 +13,5 @@ public class BookApplication {
         System.out.println(book1==book3);
         System.out.println(book2==book1);
 
-
-
     }
 }
