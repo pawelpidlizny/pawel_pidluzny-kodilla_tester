@@ -1,9 +1,9 @@
 public class Notebook {
-    String weight;
+    int weight;
     int price;
     int year;
 
-    public Notebook(String weight, int price, int year) {
+    public Notebook(int weight, int price, int year) {
         this.weight = weight;
         this.price = price;
         this.year = year;
@@ -14,17 +14,17 @@ public class Notebook {
             System.out.println("This notebook is cheap, Ten notebook jest tani.");
         } else if (this.price <= 1000) {
             System.out.println("The price is good, Cena jest good.");
-        } else if (this.price > 1000) {
+        } else if (this.price > 1100) {
             System.out.println("This notebook is  expensive, Ten notebook jest drogi.");
         }
     }
 
     public void checkWeight() {
-        if (this.weight == "600g") {
+        if (this.weight < 600) {
             System.out.println("This notebook is light,Ten notebook jest lekki.");
-        } else if (this.weight == "1600g") {
+        } else if (this.weight <= 1600) {
             System.out.println("This notebook is heavy, Ten notebook jest ciężki");
-        } else if (this.weight == "2000") {
+        } else if (this.weight > 1700) {
             System.out.println("This notebook is not very heavy,Ten notebook jest bardzo ciężki");
         }
     }
