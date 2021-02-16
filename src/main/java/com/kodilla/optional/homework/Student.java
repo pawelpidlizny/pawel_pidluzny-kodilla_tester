@@ -12,9 +12,7 @@ public class Student {
     public String getName() {
         return name;
     }
-
     public Teacher getTeacher() {
         return teacher;
     }
-
 }

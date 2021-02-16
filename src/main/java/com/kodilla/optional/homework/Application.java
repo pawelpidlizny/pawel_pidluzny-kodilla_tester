@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Optional;
 
 public class Application {
-    private static Student student;
 
     public static void main(String[] args) {
         List<Student> students = new ArrayList<>();
@@ -20,7 +19,7 @@ public class Application {
         for (Student student : students) {
             Optional<Teacher> optionalTeacher = Optional.ofNullable(student.getTeacher());
             Teacher teacherName = optionalTeacher.orElse(new Teacher("<undefined>"));
-            System.out.println("uczen:" + student.getName() + ",nauczyciel:" + teacherName.getName());
+            System.out.println("uczen: " + student.getName() + ", nauczyciel: " + teacherName.getName());
         }
     }
 }
