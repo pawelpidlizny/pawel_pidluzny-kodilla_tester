@@ -8,6 +8,7 @@ public class OptionalImp {
         Optional<User> optionalUser = Optional.of(user);
         optionalUser.ifPresent (u -> System.out.println(u.getUsername()));
     }
+
 }
 
 

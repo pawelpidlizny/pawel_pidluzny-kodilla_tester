@@ -8,8 +8,8 @@ public class Application {
     private static Student student;
 
     public static void main(String[] args) {
-        List<Student>students = new ArrayList<>();
-        students.add(new Student("Mark Bold",new Teacher("John Clark")));
+        List<Student> students = new ArrayList<>();
+        students.add(new Student("Mark Bold", new Teacher("John Clark")));
         students.add(new Student("Sara Rich", new Teacher("Anna Dark")));
         students.add(new Student("Robert Cook", null));
         students.add(new Student("Emily White", new Teacher("Emma Twins")));
@@ -17,10 +17,10 @@ public class Application {
         students.add(new Student("Lora Daisy", null));
         students.add(new Student("Olivia Tommson", null));
 
-        for (Student student : students);
-        Optional<Teacher>optionalTeacher= Optional.ofNullable(student.getTeacher());
-        Teacher teacherName = optionalTeacher.orElse(new Teacher("<undefined>"));
-        System.out.println("uczen:" + student.getName() + ",nauczyciel:"+teacherName.getName());
-
+        for (Student student : students) {
+            Optional<Teacher> optionalTeacher = Optional.ofNullable(student.getTeacher());
+            Teacher teacherName = optionalTeacher.orElse(new Teacher("<undefined>"));
+            System.out.println("uczen:" + student.getName() + ",nauczyciel:" + teacherName.getName());
+        }
     }
 }
