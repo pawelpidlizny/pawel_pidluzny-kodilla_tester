@@ -17,7 +17,7 @@ public class ForumStats {
                 .map(ForumStats::NumberOfPosts)
                 .mapToInt(n -> n)
                 .average()
-                .orElseThrow();
+                .orElse(0);
         System.out.println("Średnia postów użytkowników w wieku 40 lat i więcej wynosi : " + avg);
     }
     public void average2(){
@@ -27,7 +27,7 @@ public class ForumStats {
                 .map(ForumStats::NumberOfPosts)
                 .mapToInt(n -> n)
                 .average()
-               .orElseThrow();
+               .orElse(0);
        System.out.println("Średnia postów użytkowników w wieku poniżej 40: " + avg2);
     }
     public static int NumberOfPosts(User user) {
