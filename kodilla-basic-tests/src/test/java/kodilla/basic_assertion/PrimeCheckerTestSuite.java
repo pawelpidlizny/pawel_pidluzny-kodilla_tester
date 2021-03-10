@@ -1,4 +1,4 @@
-package com.kodilla.basic_assertion;
+package kodilla.basic_assertion;
 
 import org.junit.jupiter.api.Test;
 

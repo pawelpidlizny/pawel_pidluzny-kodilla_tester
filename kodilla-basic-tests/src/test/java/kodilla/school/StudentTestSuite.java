@@ -1,4 +1,4 @@
-package com.kodilla.school;
+package kodilla.school;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
