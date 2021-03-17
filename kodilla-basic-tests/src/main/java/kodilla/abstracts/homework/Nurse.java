@@ -2,13 +2,13 @@ package kodilla.abstracts.homework;
 
 public class Nurse extends Job {
 
-    public Nurse(int salary, String firstName, int age, char job) {
-        super(salary, firstName, age, job);
+    public Nurse(int salary, String firstName, int age) {
+        super(salary, firstName, age);
     }
 
     @Override
     public String toString() {
-        return "Name: " + firstName + "\n" + "Salary: " + salary + "\n" + "Age: " + age + " \n" + "Job: " + job;
+        return "Name: " + firstName + "\n" + "Salary: " + salary + "\n" + "Age: " + age + " \n";
     }
 
     @Override

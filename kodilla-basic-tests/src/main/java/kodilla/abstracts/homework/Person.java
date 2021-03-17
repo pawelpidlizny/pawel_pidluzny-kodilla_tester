@@ -12,7 +12,7 @@ public class Person {
     }
 
     public void displayResponsibilities() {
-        System.out.println(job);
+        job.responsibilities();
 
     }
 

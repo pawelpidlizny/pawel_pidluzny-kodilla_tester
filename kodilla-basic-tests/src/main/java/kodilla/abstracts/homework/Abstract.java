@@ -7,8 +7,8 @@ public class Abstract {
     }
 
     public static void main(String[] args) {
-        Doctor doctor = new Doctor(5000, "Dawid", 22, 'D');
-        Nurse nurse = new Nurse(4000, "Amelia", 30, 'N');
+        Doctor doctor = new Doctor(5000, "Dawid", 22);
+        Nurse nurse = new Nurse(4000, "Amelia", 30);
 
         System.out.println("\nDoctor:\n");
         System.out.println(doctor.toString());
