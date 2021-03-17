@@ -1,34 +1,91 @@
 package kodilla.bank.homework;
 
-public class Bank {
-    CashMachine atm1;
-    CashMachine atm2;
+    public class Bank {
+        private final CashMachine cm1;
+        private final CashMachine cm2;
+        private final CashMachine cm3;
+        private final CashMachine[] allCashMachines;
+        private final int size;
 
-    public int totalBalance(CashMachine atm1, CashMachine atm2) {
-        int TotalBalance = atm1.balance() + atm2.balance();
-        return TotalBalance;
-    }
+        public Bank() {
+            this.cm1 = new CashMachine();
+            this.cm2 = new CashMachine();
+            this.cm3 = new CashMachine();
+            this.allCashMachines = new CashMachine[3];
+            this.allCashMachines[0] = cm1;
+            this.allCashMachines[1] = cm2;
+            this.allCashMachines[2] = cm3;
+            this.size = allCashMachines.length;
+        }
 
-    public int inTransactionCount(CashMachine atm1, CashMachine atm2) {
-        int TotalInTransactionCount = atm1.inValuesCount() + atm2.inValuesCount();
-        return TotalInTransactionCount;
-    }
+        public CashMachine getCm1() {
+            return cm1;
+        }
 
-    public int outTransactionsCount(CashMachine atm1, CashMachine atm2) {
-        int TotalOutTransactionCount = atm1.outValuesCount() + atm2.outValuesCount();
+        public CashMachine getCm2() {
+            return cm2;
+        }
 
-        return TotalOutTransactionCount;
-    }
+        public CashMachine getCm3() {
+            return cm3;
+        }
 
-    public double totalAverageIn(CashMachine atm1, CashMachine atm2) {
-        double TotalAverageIn = (atm1.inValueSum() + atm2.inValueSum()) / (atm1.inValuesCount() + atm2.inValuesCount());
+        public CashMachine[] getAllCashMachines() {
+            return allCashMachines;
+        }
 
-        return TotalAverageIn;
-    }
+        public int getSize() {
+            return size;
+        }
 
-    public double totalAverageOut(CashMachine atm1, CashMachine atm2) {
-        double TotalAverageOut = (atm1.outValueSum() + atm2.outValueSum()) / (atm1.outValuesCount() + atm2.outValuesCount());
+        public double getTotalBalance() {
+            double sum = 0;
+            for (int i = 0; i < size; i++) {
+                sum += allCashMachines[i].getBalanceOfCashMachine();
+            }
+            return sum;
+        }
 
-        return TotalAverageOut;
-    }
-}
+        public double getTotalNumberOfTransactions() {
+            double sum = 0;
+            for (int i = 0; i < size; i++) {
+                sum += allCashMachines[i].getNumberOfAllTransactions();
+            }
+            return sum;
+        }
+
+        public double getTotalNumberOfWithdrawals() {
+            double sum = 0;
+            for (int i = 0; i < size; i++) {
+                sum += allCashMachines[i].getNumberOfWithdrawals();
+            }
+            return sum;
+        }
+
+        public double getTotalNumberOfDeposits() {
+            double sum = 0;
+            for (int i = 0; i < size; i++) {
+                sum += allCashMachines[i].getNumberOfDeposits();
+            }
+            return sum;
+        }
+
+        public double getTotalAverageWithdrawals() {
+            double sum = 0;
+            int count = 0;
+            for (int i = 0; i < size; i++) {
+                sum += allCashMachines[i].getAverageWithdrawals();
+                count++;
+            }
+            return sum / count;
+        }
+        public double getTotalAverageDeposits() {
+            double sum = 0;
+            int count = 0;
+            for (int i = 0; i < size; i++) {
+                sum += allCashMachines[i].getAverageDeposits();
+                count++;
+            }
+            return sum / count;
+        }
+        }
