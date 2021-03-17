@@ -12,6 +12,7 @@ public abstract class Job {
         this.firstName = firstName;
         this.age = age;
         this.job = job;
+
     }
 
     public abstract void responsibilities();

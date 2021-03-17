@@ -18,6 +18,7 @@ public class Nurse extends Job {
 
     @Override
     public void responsibilities() {
+
         System.out.println("He helps the sick ");
 
     }

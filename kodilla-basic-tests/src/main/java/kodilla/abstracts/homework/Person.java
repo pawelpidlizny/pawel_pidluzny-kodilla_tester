@@ -15,11 +15,6 @@ public class Person {
         System.out.println(job);
     }
 
-    public static void main(String[] args) {
-        Person person = new Person("Agnieszka", 27,'j');
-        person.displayResponsibilities();
-    }
-
     public String getFirstName() {
         return firstName;
     }

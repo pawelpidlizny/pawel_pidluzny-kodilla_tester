@@ -15,6 +15,7 @@ public class Abstract {
         doctor.responsibilities();
         doctor.process();
 
+
         System.out.println("\nNurse:\n");
         System.out.println(nurse.toString());
         nurse.responsibilities();
