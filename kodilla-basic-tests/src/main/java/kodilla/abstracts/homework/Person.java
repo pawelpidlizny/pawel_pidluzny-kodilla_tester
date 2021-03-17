@@ -13,6 +13,7 @@ public class Person {
 
     public void displayResponsibilities() {
         System.out.println(job);
+
     }
 
     public String getFirstName() {
