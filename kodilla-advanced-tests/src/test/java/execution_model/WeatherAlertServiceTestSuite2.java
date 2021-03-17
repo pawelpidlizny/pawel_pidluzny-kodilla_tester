@@ -6,7 +6,7 @@ import kodilla.parametrized_tests.homework.com.kodilla.mockito.homework.WeatherA
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
- public class WeatherAlertServiceTestSuite {
+ public class WeatherAlertServiceTestSuite2 {
      WeatherAlertService weatherAlertService = new WeatherAlertService();
 
      // mocki
