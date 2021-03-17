@@ -17,13 +17,13 @@ public class WeatherAlertService {
     }
 
     public void unsubscribeLocation(Subscriber subscriber, Location location) {
-        if (this.subscriberLocationHashMap.get(subscriber) == location)
+        if (this.subscriberLocationHashMap.get(subscriber).equals(location))
             this.subscriberLocationHashMap.remove(subscriber, location);
         subscriber.unsubscribeLocation(location);
     }
 
     public void sendAlert() {
-        this.subscriberLocationHashMap.forEach((subscriber, location) -> subscriber.receiveAlert(location));
+        this.subscriberLocationHashMap.forEach(Subscriber::receiveAlert);
     }
 
     public void sendSubscriberNotifications() {
