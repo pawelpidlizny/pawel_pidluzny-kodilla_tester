@@ -15,7 +15,6 @@ public class WeatherAlertService {
             subscriber.subscribeToLocation(location);
         }
     }
-
     public void unsubscribeLocation(Subscriber subscriber, Location location) {
         if (this.subscriberLocationHashMap.get(subscriber).equals(location))
             this.subscriberLocationHashMap.remove(subscriber, location);
